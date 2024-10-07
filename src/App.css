@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.hedertitle{
+    border-top: 2px solid gold ;
+    border-bottom: 2px solid gold ;
+    text-align: center;
+    padding: 3px;
+    background-image: url(./img/titile_back.png);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hedertitle text{
+    background: #F67B0A;
+    background: linear-gradient(to top, #F67B0A 20%, #F8F442 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.luckyspin{
+    font-family: "ModernAntiqua-Regular";
+    background: #F67B0A;
+    background: linear-gradient(to top, #F67B0A 20%, #F8F442 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    padding: 10px;
+}
+.weelimg img{
+    width: 35%;
+}
+.playbtn{
+    border: 2px solid gold ;
+    padding: 5px 20px;
+    border-radius: 5px ;
+    background-image: url(./img/titile_back.png);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.playbtn .clickbtn{
+    background: #F67B0A;
+    background: linear-gradient(to top, #F67B0A 20%, #F8F442 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+.playbtn:hover .clickbtn{
+    background: #F67B0A;
+    background: linear-gradient(to top, #ffffff 20%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.playbtn:hover{
+    transform: translateY(-10px);
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 481px) and (max-width: 767px) {
+    .weelimg img{
+        width: 100%;
+    }
+    .luckyspin{
+        padding-top: 50px;
+    }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 320px) and (max-width: 480px){
+    .weelimg img{
+        width: 100%;
+    }
+    .luckyspin{
+        padding-top: 50px;
+    }
 }

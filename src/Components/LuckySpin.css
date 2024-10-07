@@ -1,0 +1,100 @@
+.lucky-spin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .spin-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .wheel {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 8px solid #f7e28c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 3s ease-out; /* Smooth spinning */
+    overflow: hidden;
+  }
+  
+  /* .arrow {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid red;
+    z-index: 10;
+  } */
+  
+  .segment {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 68%);
+    transform-origin: bottom right;
+    
+  }
+  
+  .segment-1 { transform: rotate(0deg); background-color: #f7e28c;overflow: hidden; }
+  .segment-2 { transform: rotate(45deg); background-color: #f0c279;overflow: hidden;}
+  .segment-3 { transform: rotate(90deg); background-color: #f7e28c; overflow: hidden;}
+  .segment-4 { transform: rotate(135deg); background-color: #f0c279;overflow: hidden;}
+  .segment-5 { transform: rotate(180deg); background-color: #f7e28c; overflow: hidden;}
+  .segment-6 { transform: rotate(225deg); background-color: #f0c279; overflow: hidden;}
+  .segment-7 { transform: rotate(270deg); background-color: #f7e28c;overflow: hidden; }
+  .segment-8 { transform: rotate(315deg); background-color: #f0c279; overflow: hidden;}
+
+  .segment span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: rotate(-48deg);
+    left: 0%;
+  }
+  
+  .spin-button {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    font-size: 10px;
+    height: 50px;
+    border-radius: 30px;
+    top: 46%;
+    left: 50%;
+    transform: translate(-49%, -45%);
+    font-size: 10px;
+    background-color: #a92c1d;
+    letter-spacing: 2px;
+    color: white;
+    border: 3px solid rgb(73, 159, 193);
+  }
+
+  .spin-button::before{
+    position: absolute;
+    content: "";
+    top: -33%;
+    left: 28%;
+    width: 20px;
+    height: 15px;
+    background-color: #499fc1;
+    clip-path: polygon(52% 0, 30% 100%, 75% 100%);
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(45, 43, 43);
+    background-color: #f0c279;
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-family: "ModernAntiqua-Regular";
+    border: 2px solid #a92c1d;
+  }
+  
